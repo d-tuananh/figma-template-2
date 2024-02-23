@@ -1,0 +1,24 @@
+{
+  "name": "figma-template-2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build-css": "npx tailwindcss -i ./src/input.css -o ./src/main.css --watch",
+    "dev": "vite"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/d-tuananh/figma-template-2.git"
+  },
+  "author": "TuanAnh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/d-tuananh/figma-template-2/issues"
+  },
+  "homepage": "https://github.com/d-tuananh/figma-template-2#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.4.1",
+    "vite": "^5.1.4"
+  }
+}
