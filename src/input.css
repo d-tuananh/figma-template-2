@@ -5,6 +5,59 @@
 
 @layer base {
   body {
-    @apply font-lato text-base leading-tight font-normal;
+    @apply font-lato text-sm md:text-base leading-tight font-normal;
   }
+  section {
+    @apply first:mt-0 mt-[5rem];
+  }
+  h2 {
+    @apply text-4xl;
+  }
+}
+
+@layer components {
+  .container {
+    @apply mx-auto px-1 lg:px-2 2xl:px-3;
+  }
+  .icon {
+    @apply w-7 h-7 flex justify-center items-center;
+  }
+  .text-linear-orange {
+    @apply text-transparent bg-clip-text bg-linear-orange;
+  }
+  .text-linear-green {
+    @apply text-transparent bg-clip-text bg-linear-green;
+  }
+  .menu-desktop {
+    @apply hidden xl:flex justify-evenly w-full;
+  }
+  .menu-desktop li {
+    @apply font-bold cursor-pointer hover:text-linear-green relative hover:after:absolute after:content-[''] after:w-[1.5rem] after:h-1 after:rounded-full after:-bottom-3 after:left-1/2 after:-translate-x-1/2 after:bg-linear-green;
+  }
+  .menu-moblie {
+    @apply flex xl:hidden flex-col bg-white shadow-ct-green;
+  }
+  .menu-moblie li {
+    @apply px-2 py-3 border-b-2 first:flex first:items-center first:space-x-14 first:bg-linear-Yellow-Green first:justify-between;
+  }
+  .menu-moblie li a {
+    @apply hover:text-linear-green w-full block first:max-w-[13rem];
+  }
+  .h-min-1 {
+    @apply h-[1px];
+  }
+  .trapezoid {
+    @apply bg-linear-Yellow-Green;
+  }
+  .triangle {
+    @apply bg-white;
+  }
+}
+
+.trapezoid {
+  clip-path: polygon(0% 0%, 100% 15%, 100% 85%, 0% 100%);
+}
+
+.triangle {
+  clip-path: polygon(100% 85%, 0 100%, 100% 100%);
 }

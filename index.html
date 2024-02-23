@@ -4,7 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Phương Đông Landing</title>
-    <link rel="shortcut icon" href="public/logo.png" type="image/x-icon" />
+    <link
+      rel="shortcut icon"
+      href="public/logo_favicon.png"
+      type="image/x-icon"
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
@@ -14,5 +18,265 @@
     />
     <link rel="stylesheet" href="src/main.css" />
   </head>
-  <body></body>
+  <body>
+    <!-- Header -->
+    <header class="fixed top-0 inset-x-0 z-50 bg-black/10">
+      <nav class="container flex justify-between items-center py-4">
+        <a href="#" title="Logo-Header" class="block">
+          <img src="public/logo_header.png" alt="logo-header" />
+        </a>
+
+        <ul class="menu-desktop">
+          <li><a href="#">Giới thiệu</a></li>
+          <li><a href="#">Đối tượng khách hàng</a></li>
+          <li><a href="#">Quy trình</a></li>
+          <li><a href="#">Bảng giá</a></li>
+          <li><a href="#">Cảm nhận của khách hàng</a></li>
+          <li><a href="#">Đội ngũ bác sĩ</a></li>
+          <li><a href="#">Hình ảnh & Video</a></li>
+        </ul>
+
+        <a
+          href="tel:+1900 1806"
+          class="hidden xl:flex min-w-fit items-center space-x-1 bg-linear-orange p-2 rounded-full hover:bg-linear-green"
+        >
+          <span class="bg-white rounded-full icon">
+            <i
+              class="fas fa-phone-alt text-linear-orange hover:bg-linear-green"
+            ></i>
+          </span>
+          <span class="text-white font-bold">Gọi 1900 1806</span>
+        </a>
+
+        <button class="xl:hidden text-3xl hover:text-linear-green btn-menu">
+          <i class="fas fa-bars"></i>
+        </button>
+      </nav>
+
+      <ul
+        class="menu-moblie fixed inset-y-0 left-0 -translate-x-[120%] w-full sm:w-fit duration-700 ease-linear z-50"
+      >
+        <li>
+          <a href="/">
+            <img src="public/logo_footer.png" alt="" />
+          </a>
+          <i
+            class="far fa-caret-square-left icon text-3xl text-white hover:text-main cursor-pointer btn-close"
+          ></i>
+        </li>
+        <li><a href="#">Giới thiệu</a></li>
+        <li><a href="#">Đối tượng khách hàng</a></li>
+        <li><a href="#">Quy trình</a></li>
+        <li><a href="#">Bảng giá</a></li>
+        <li><a href="#">Cảm nhận của khách hàng</a></li>
+        <li><a href="#">Đội ngũ bác sĩ</a></li>
+        <li><a href="#">Hình ảnh & Video</a></li>
+        <li>
+          <a href="tel:+1900 1806"> Liên hệ | 1900 1806 </a>
+        </li>
+      </ul>
+      <div
+        class="fixed inset-0 translate-x-full duration-500 ease-linear bg-black/30 z-40 block xl:hidden bg-over-menu"
+      ></div>
+    </header>
+
+    <!-- Body -->
+    <main>
+      <!-- Start Section 1 -->
+      <section class="relative overflow-hidden">
+        <div
+          class="absolute left-1/2 -translate-x-[15rem] top-0 xl:-translate-y-[8rem] z-[1]"
+        >
+          <div
+            class="2xl:w-[90rem] xl:w-[80rem] xl:h-[80rem] w-[60rem] h-[60rem] 2xl:h-[90rem] relative"
+          >
+            <div
+              class="absolute inset-0 bg-linear-Green-Yellow opacity-[.03] rounded-full"
+            ></div>
+            <div
+              class="absolute inset-[7%] bg-linear-Green-Yellow opacity-5 rounded-full"
+            ></div>
+            <div
+              class="absolute inset-[14%] bg-linear-Green-Yellow opacity-10 rounded-full"
+            ></div>
+            <div
+              class="absolute inset-[21%] bg-linear-Green-Yellow rounded-full"
+            ></div>
+          </div>
+        </div>
+        <div
+          class="w-[40rem] h-[40rem] bg-linear-Green-Yellow absolute rounded-full top-0 -translate-y-2/3 left-1/2 -translate-x-1/3 z-[2] opacity-10"
+        ></div>
+        <div
+          class="w-[40rem] h-[40rem] bg-linear-Green-Yellow absolute rounded-full right-1/2 bottom-0 translate-y-2/3 -translate-x-[5rem] z-[1] opacity-10"
+        ></div>
+        <div
+          class="w-[40rem] h-[40rem] bg-linear-Green-Yellow absolute rounded-full right-1/2 top-0 -translate-y-1/2 -translate-x-full z-[1] opacity-30"
+        ></div>
+        <div class="absolute bg-linear-Green-Yellow inset-0 opacity-10"></div>
+        <div
+          class="absolute bg-linear-Green-Yellow inset-0 opacity-5 rotate-[150deg] translate-x-[80rem]"
+        ></div>
+        <div class="container flex space-x-5 pt-[5rem] flex-col md:flex-row">
+          <div
+            class="space-y-5 z-10 self-center mb-5 md:text-start text-center"
+          >
+            <h1 class="font-bold text-3xl md:text-4xl xl:text-5xl 2xl:text-6xl">
+              Dịch vụ Khám bệnh tại nhà <br />
+              An tâm chẳng lo ngại đường xa
+            </h1>
+            <p class="xl:w-3/4">
+              Bệnh viện Đa khoa Phương Đông triển khai dịch vụ khám bệnh tại nhà
+              giúp các gia đình có con nhỏ, người cao tuổi, khó đi lại... được
+              hưởng sự chăm sóc y tế cao cấp, an toàn, hiệu quả.
+            </p>
+            <button
+              class="bg-linear-orange text-white flex space-x-2 py-2 px-5 items-center font-bold rounded-full mx-auto md:mx-0 hover:bg-linear-Yellow-Green"
+            >
+              <i class="fas fa-file-signature icon"></i>
+              <span>ĐĂNG KÝ TƯ VẤN</span>
+            </button>
+          </div>
+          <div class="z-10 self-end w-1/2 md:w-fit">
+            <img src="public/img1.png" alt="image-doctor" />
+          </div>
+        </div>
+      </section>
+      <!-- End Section 1 -->
+
+      <!-- Start Section 2 -->
+      <section class="relative">
+        <div class="container grid grid-cols-5 space-x-5">
+          <div class="col-span-2">
+            <img src="public/img2.png" alt="" />
+          </div>
+          <div class="col-span-3 space-y-5 place-self-center">
+            <div class="flex space-x-2 items-center">
+              <div class="w-[5rem] h-min-1 bg-linear-green"></div>
+              <p class="text-sm font-bold tracking-widest text-linear-green">
+                GIỚI THIỆU
+              </p>
+            </div>
+            <h2 class="w-2/3 font-bold">
+              Tạo ra tâm lý thoải mái, hỗ trợ điều trị tích cực cho người bệnh
+            </h2>
+            <p>
+              Dịch vụ khám bệnh tại nhà có thể áp dụng với mọi đối tượng người
+              bệnh, đặc biệt tiện lợi đối với những người gặp khó khăn khi di
+              chuyển, người già neo đơn, người khuyết tật, gia đình có trẻ nhỏ…
+            </p>
+            <p>
+              Trẻ nhỏ, cũng như người già, là đối tượng rất dễ mắc bệnh do hệ
+              miễn dịch chưa hoàn thiện, sức đề kháng kém. Nhiều cha mẹ e ngại
+              việc đưa trẻ đi khám chữa bệnh ở bệnh viện, trạm xá đông người vì
+              sợ lây nhiễm chéo. Giờ đây, với dịch vụ khám tại nhà, cha mẹ và bé
+              không cần chịu đựng tình trạng quá tải, đợi chờ để thăm khám hay
+              mất nhiều thời gian và công sức di chuyển để chăm bé.
+            </p>
+            <p>
+              Người cao tuổi dễ mắc các bệnh về cơ xương khớp, huyết áp, tim
+              mạch, tiểu đường.... Đây là những bệnh khó điều trị khỏi dứt điểm
+              mà chỉ có thể kiểm soát, phải thường xuyên theo dõi và chăm sóc.
+              Dịch vụ khám bệnh tại nhà sẽ giúp các gia đình chăm sóc người già
+              ngay tại nơi ở là giải pháp y tế tiện lợi, tiết kiệm thời gian, xử
+              trí các tình huống bất ngờ một cách kịp thời và nhanh chóng.
+            </p>
+            <div class="flex space-x-3">
+              <button
+                class="bg-linear-orange flex items-center py-2 px-4 rounded-full space-x-2 text-white hover:bg-linear-Green-Yellow font-bold"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                >
+                  <g clip-path="url(#clip0_1_11993)">
+                    <path
+                      d="M12.25 2H11.15C10.82 0.85 9.76 0 8.5 0C7.24 0 6.18 0.85 5.85 2H4.75C4.34 2 4 2.34 4 2.75V4.25C4 5.21 4.79 6 5.75 6H11.25C12.21 6 13 5.21 13 4.25V2.75C13 2.34 12.66 2 12.25 2Z"
+                      fill="white"
+                    />
+                    <path
+                      d="M14.25 3H14V4.25C14 5.77 12.77 7 11.25 7H5.75C4.23 7 3 5.77 3 4.25V3H2.75C1.23 3 0 4.23 0 5.75V18.25C0 19.77 1.23 21 2.75 21H10.13L10.35 19.77C10.45 19.21 10.71 18.71 11.11 18.3L11.91 17.5H3.75C3.34 17.5 3 17.16 3 16.75C3 16.34 3.34 16 3.75 16H13.25C13.3 16 13.34 16 13.39 16.02H13.4L17 12.42V5.75C17 4.23 15.77 3 14.25 3ZM13.25 14.25H3.75C3.34 14.25 3 13.91 3 13.5C3 13.09 3.34 12.75 3.75 12.75H13.25C13.66 12.75 14 13.09 14 13.5C14 13.91 13.66 14.25 13.25 14.25ZM13.25 11H3.75C3.34 11 3 10.66 3 10.25C3 9.84 3.34 9.5 3.75 9.5H13.25C13.66 9.5 14 9.84 14 10.25C14 10.66 13.66 11 13.25 11Z"
+                      fill="white"
+                    />
+                    <path
+                      d="M12.527 24.0001C12.33 24.0001 12.138 23.9221 11.997 23.7801C11.824 23.6071 11.746 23.3611 11.789 23.1191L12.319 20.1141C12.345 19.9631 12.419 19.8231 12.527 19.7141L19.952 12.2901C20.864 11.3761 21.76 11.6231 22.25 12.1131L23.487 13.3501C24.17 14.0321 24.17 15.1421 23.487 15.8251L16.062 23.2501C15.954 23.3591 15.814 23.4321 15.662 23.4581L12.657 23.9881C12.614 23.9961 12.57 24.0001 12.527 24.0001ZM15.532 22.7201H15.542H15.532Z"
+                      fill="white"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_1_11993">
+                      <rect width="24" height="24" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+                <span>ĐĂNG KÝ TƯ VẤN</span>
+              </button>
+              <button
+                class="bg-linear-green flex items-center py-2 px-4 rounded-full space-x-2 text-white hover:bg-linear-Yellow-Green font-bold"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                >
+                  <path
+                    d="M17.093 15.7479C16.8792 15.3774 16.5785 15.0646 16.2168 14.8363C15.855 14.608 15.4432 14.4711 15.0168 14.4376C14.5903 14.404 14.1622 14.4747 13.7692 14.6436C13.3762 14.8125 13.0302 15.0745 12.761 15.4069C12.6541 15.5377 12.5195 15.643 12.3669 15.7154C12.2142 15.7877 12.0474 15.8253 11.8785 15.8253C11.7096 15.8253 11.5428 15.7877 11.3902 15.7154C11.2376 15.643 11.103 15.5377 10.996 15.4069C10.3616 14.661 9.79285 13.8617 9.29604 13.0179C8.81468 12.1644 8.40751 11.2711 8.07904 10.3479C8.02 10.1872 7.99736 10.0154 8.01275 9.84493C8.02815 9.67442 8.08118 9.50946 8.16804 9.36193C8.25168 9.21694 8.36714 9.09282 8.50572 8.99894C8.64429 8.90505 8.80237 8.84385 8.96804 8.81993C9.38947 8.75176 9.78803 8.58225 10.1295 8.32599C10.4709 8.06972 10.745 7.73436 10.9281 7.34875C11.1113 6.96314 11.1981 6.53881 11.181 6.11225C11.1639 5.68569 11.0435 5.26966 10.83 4.89993L9.44404 2.49993C9.24445 2.15395 8.96884 1.85786 8.63804 1.63401C8.30724 1.41017 7.9299 1.26442 7.53452 1.20779C7.13913 1.15115 6.73605 1.18511 6.35571 1.30709C5.97537 1.42908 5.62773 1.6359 5.33904 1.91193L4.86504 2.36493C3.73731 3.43117 2.95809 4.81331 2.62957 6.33012C2.30105 7.84694 2.43855 9.42762 3.02404 10.8649C3.64831 12.4183 4.37801 13.9271 5.20804 15.3809C6.06543 16.8502 7.02408 18.2579 8.07704 19.5939C8.80792 20.5176 9.7385 21.2638 10.7989 21.7764C11.8594 22.2891 13.0222 22.5549 14.2 22.5539C14.9605 22.5544 15.7168 22.4415 16.444 22.2189L17.015 22.0419C17.3928 21.9248 17.7393 21.724 18.0288 21.4547C18.3183 21.1853 18.5435 20.8542 18.6876 20.4859C18.8317 20.1176 18.891 19.7216 18.8611 19.3272C18.8313 18.9329 18.713 18.5503 18.515 18.2079L17.093 15.7479Z"
+                    fill="white"
+                  />
+                  <path
+                    d="M17.0099 13.6611C16.971 13.661 16.9322 13.658 16.8939 13.6521C16.6973 13.6213 16.5209 13.5138 16.4036 13.3531C16.2862 13.1924 16.2374 12.9917 16.2679 12.7951C16.3143 12.5057 16.3381 12.2132 16.3389 11.9201C16.3382 10.8834 16.0312 9.86996 15.4563 9.00722C14.8814 8.14447 14.0644 7.47089 13.1079 7.0711C13.0162 7.03343 12.933 6.97798 12.8629 6.90795C12.7928 6.83792 12.7373 6.75471 12.6996 6.66311C12.6619 6.57151 12.6427 6.47334 12.6431 6.37427C12.6435 6.27521 12.6635 6.17721 12.702 6.08593C12.7405 5.99465 12.7968 5.91191 12.8674 5.84247C12.9381 5.77304 13.0218 5.7183 13.1137 5.6814C13.2057 5.6445 13.304 5.62619 13.4031 5.62751C13.5021 5.62883 13.5999 5.64976 13.6909 5.6891C14.9196 6.203 15.969 7.06872 16.707 8.1774C17.4451 9.28608 17.8389 10.5882 17.8389 11.9201C17.8381 12.2905 17.8083 12.6603 17.7499 13.0261C17.7226 13.2029 17.6331 13.364 17.4974 13.4805C17.3616 13.597 17.1887 13.661 17.0099 13.6611Z"
+                    fill="white"
+                  />
+                  <path
+                    d="M20.9501 14.3111C20.9078 14.3109 20.8657 14.3072 20.8241 14.3001C20.7269 14.2836 20.634 14.2482 20.5506 14.1958C20.4672 14.1434 20.3949 14.0751 20.3379 13.9948C20.2809 13.9145 20.2402 13.8237 20.2183 13.7277C20.1964 13.6316 20.1936 13.5322 20.2101 13.4351C20.2953 12.9346 20.3385 12.4278 20.3391 11.9201C20.3424 10.0924 19.8023 8.30487 18.7873 6.78479C17.7724 5.26471 16.3285 4.08067 14.6391 3.38312C14.5446 3.34777 14.4582 3.29372 14.3851 3.22421C14.312 3.1547 14.2536 3.07115 14.2136 2.97857C14.1735 2.88599 14.1525 2.78627 14.1519 2.68539C14.1512 2.58451 14.171 2.48454 14.2099 2.39146C14.2488 2.29838 14.306 2.2141 14.3783 2.14367C14.4505 2.07325 14.5362 2.01811 14.6302 1.98158C14.7243 1.94504 14.8247 1.92785 14.9255 1.93104C15.0264 1.93422 15.1255 1.95772 15.2171 2.00012C17.18 2.81132 18.8576 4.18765 20.0366 5.95429C21.2157 7.72093 21.8431 9.79816 21.8391 11.9221C21.8386 12.514 21.7881 13.1048 21.6881 13.6881C21.6581 13.8623 21.5677 14.0202 21.4327 14.1342C21.2977 14.2482 21.1268 14.3108 20.9501 14.3111Z"
+                    fill="white"
+                  />
+                </svg>
+                <span>GỌI CHO CHÚNG TÔI</span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div
+          class="trapezoid absolute bottom-0 left-0 -z-10 h-4/5 right-1/2 -translate-x-[15rem]"
+        ></div>
+        <div
+          class="triangle absolute bottom-0 left-0 h-4/5 right-1/2 -translate-x-[15rem]"
+        ></div>
+      </section>
+      <!-- End Section 2 -->
+
+      <!-- Start Section 3 -->
+      <!-- End Section 3 -->
+
+      <!-- Start Section 4 -->
+      <!-- End Section 4 -->
+
+      <!-- Start Section 5 -->
+      <!-- End Section 5 -->
+
+      <!-- Start Section 6 -->
+      <!-- End Section 6 -->
+
+      <!-- Start Section 7 -->
+      <!-- End Section 7 -->
+
+      <!-- Start Section 8 -->
+      <!-- End Section 8 -->
+
+      <!-- Start Section 9 -->
+      <!-- End Section 9 -->
+    </main>
+
+    <!-- Footer -->
+    <footer></footer>
+
+    <!-- Scripts -->
+    <script src="src/main.js" defer></script>
+  </body>
 </html>
