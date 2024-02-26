@@ -113,16 +113,12 @@
 .swiper {
   width: 100%;
   height: 100%;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .swiper-slide {
   text-align: center;
   font-size: 18px;
   background: #fff;
-  /* height: calc((100% - 10rem) / 2) !important; */
-  /* Center slide text vertically */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -130,13 +126,20 @@
 
 .swiper-slide img {
   display: block;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
-  /* width: 100%; */
-  /* height: 100%; */
+}
+
+.swiper-pagination-bullet-active[aria-current="true"] {
+  width: 3rem;
+  border-radius: 2rem;
+  background-color: #0a9949;
 }
 
 @media (max-width: 1024px) {
-  .trapezoid-2 {
+  .trapezoid-2,
+  .trapezoid {
     clip-path: polygon(0 1%, 100% 0, 100% 100%, 0% 100%);
   }
 }
