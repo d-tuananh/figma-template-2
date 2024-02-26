@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Allura&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -7,50 +8,87 @@
   body {
     @apply font-lato text-sm md:text-base leading-tight font-normal;
   }
+
   section {
     @apply first:mt-0 mt-[5rem];
   }
+
+  h1 {
+    @apply text-3xl md:text-4xl xl:text-5xl 2xl:text-6xl font-bold;
+  }
+
   h2 {
-    @apply text-4xl;
+    @apply text-xl md:text-2xl xl:text-3xl 2xl:text-4xl font-bold text-center lg:text-start;
+  }
+
+  footer a {
+    @apply hover:text-main;
   }
 }
 
 @layer components {
-  .container {
-    @apply mx-auto px-1 lg:px-2 2xl:px-3;
-  }
   .icon {
     @apply w-7 h-7 flex justify-center items-center;
   }
+
   .text-linear-orange {
     @apply text-transparent bg-clip-text bg-linear-orange;
   }
+
   .text-linear-green {
     @apply text-transparent bg-clip-text bg-linear-green;
   }
+
   .menu-desktop {
     @apply hidden xl:flex justify-evenly w-full;
   }
+
   .menu-desktop li {
     @apply font-bold cursor-pointer hover:text-linear-green relative hover:after:absolute after:content-[''] after:w-[1.5rem] after:h-1 after:rounded-full after:-bottom-3 after:left-1/2 after:-translate-x-1/2 after:bg-linear-green;
   }
+
   .menu-moblie {
     @apply flex xl:hidden flex-col bg-white shadow-ct-green;
   }
+
   .menu-moblie li {
     @apply px-2 py-3 border-b-2 first:flex first:items-center first:space-x-14 first:bg-linear-Yellow-Green first:justify-between;
   }
+
   .menu-moblie li a {
     @apply hover:text-linear-green w-full block first:max-w-[13rem];
   }
+
   .h-min-1 {
-    @apply h-[1px];
+    @apply h-[2px];
   }
+
   .trapezoid {
     @apply bg-linear-Yellow-Green;
   }
-  .triangle {
-    @apply bg-white;
+
+  .trapezoid-2 {
+    @apply bg-linear-Green-Yellow;
+  }
+
+  .container-swiper {
+    @apply relative max-w-full;
+  }
+
+  details {
+    @apply px-3 py-2 bg-[#EEF5F2]/70 rounded-md shadow-green-300 shadow-sm;
+  }
+
+  summary {
+    @apply leading-7 pr-10 py-1 line-clamp-1 tracking-wide hover:text-linear-orange cursor-pointer list-none relative after:content-['\002B'] after:absolute after:right-0 after:top-1/2 after:-translate-y-1/2 after:font-bold after:text-xl after:size-5 after:bg-green-600 after:flex after:justify-center after:items-center after:text-white after:rounded-full;
+  }
+
+  details[open] summary {
+    @apply after:content-['\2212'] line-clamp-none leading-tight;
+  }
+
+  details[open] p {
+    @apply mt-1;
   }
 }
 
@@ -58,6 +96,47 @@
   clip-path: polygon(0% 0%, 100% 15%, 100% 85%, 0% 100%);
 }
 
+.trapezoid-2 {
+  clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 85%);
+}
+
 .triangle {
   clip-path: polygon(100% 85%, 0 100%, 100% 100%);
+  background-color: white;
+}
+
+.triangle-2 {
+  clip-path: polygon(0 85%, 0% 100%, 100% 100%);
+  background-color: white;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  /* height: calc((100% - 10rem) / 2) !important; */
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  object-fit: cover;
+  /* width: 100%; */
+  /* height: 100%; */
+}
+
+@media (max-width: 1024px) {
+  .trapezoid-2 {
+    clip-path: polygon(0 1%, 100% 0, 100% 100%, 0% 100%);
+  }
 }

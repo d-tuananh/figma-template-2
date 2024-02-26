@@ -17,10 +17,15 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="src/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
   </head>
   <body>
     <!-- Header -->
-    <header class="fixed top-0 inset-x-0 z-50 bg-black/10">
+    <header class="fixed top-0 inset-x-0 z-50 bg-black/20">
+      <!-- Menu desktop -->
       <nav class="container flex justify-between items-center py-4">
         <a href="#" title="Logo-Header" class="block">
           <img src="public/logo_header.png" alt="logo-header" />
@@ -39,11 +44,54 @@
         <a
           href="tel:+1900 1806"
           class="hidden xl:flex min-w-fit items-center space-x-1 bg-linear-orange p-2 rounded-full hover:bg-linear-green"
+          title="Gọi 1900 1806"
         >
           <span class="bg-white rounded-full icon">
-            <i
-              class="fas fa-phone-alt text-linear-orange hover:bg-linear-green"
-            ></i>
+            <svg
+              width="20"
+              height="20"
+              viewBox="0 0 20 20"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M15.8043 13.842L14.8268 12.8645C14.3384 12.3761 13.5468 12.3761 13.0593 12.8645L12.2909 13.6328C12.1193 13.8045 11.8593 13.862 11.6376 13.7645C10.5243 13.277 9.42427 12.5378 8.44344 11.557C7.46677 10.5803 6.7301 9.4853 6.24177 8.37613C6.1401 8.14697 6.19927 7.8778 6.37677 7.7003L7.0651 7.01197C7.62427 6.4528 7.62427 5.66197 7.13594 5.17363L6.15844 4.19613C5.5076 3.5453 4.4526 3.5453 3.80177 4.19613L3.25844 4.73863C2.64094 5.35613 2.38344 6.24697 2.5501 7.1303C2.96177 9.3078 4.22677 11.692 6.2676 13.7328C8.30844 15.7736 10.6926 17.0386 12.8701 17.4503C13.7534 17.617 14.6443 17.3595 15.2618 16.742L15.8043 16.1995C16.4551 15.5486 16.4551 14.4936 15.8043 13.842V13.842Z"
+                stroke="#E57709"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M10.8335 5.82599C11.6927 5.81433 12.556 6.13266 13.2118 6.78849"
+                stroke="#E57709"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M15.5685 4.43188C14.261 3.12438 12.5468 2.47021 10.8335 2.47021"
+                stroke="#E57709"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M14.1744 9.16691C14.1861 8.30774 13.8677 7.44441 13.2119 6.78857"
+                stroke="#E57709"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M15.5684 4.43164C16.8759 5.73914 17.53 7.45331 17.53 9.16664"
+                stroke="#E57709"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
           </span>
           <span class="text-white font-bold">Gọi 1900 1806</span>
         </a>
@@ -53,28 +101,36 @@
         </button>
       </nav>
 
-      <ul
+      <!-- Menu moblie -->
+      <div
         class="menu-moblie fixed inset-y-0 left-0 -translate-x-[120%] w-full sm:w-fit duration-700 ease-linear z-50"
       >
-        <li>
-          <a href="/">
-            <img src="public/logo_footer.png" alt="" />
-          </a>
-          <i
-            class="far fa-caret-square-left icon text-3xl text-white hover:text-main cursor-pointer btn-close"
-          ></i>
-        </li>
-        <li><a href="#">Giới thiệu</a></li>
-        <li><a href="#">Đối tượng khách hàng</a></li>
-        <li><a href="#">Quy trình</a></li>
-        <li><a href="#">Bảng giá</a></li>
-        <li><a href="#">Cảm nhận của khách hàng</a></li>
-        <li><a href="#">Đội ngũ bác sĩ</a></li>
-        <li><a href="#">Hình ảnh & Video</a></li>
-        <li>
-          <a href="tel:+1900 1806"> Liên hệ | 1900 1806 </a>
-        </li>
-      </ul>
+        <ul>
+          <li>
+            <a href="/" title="logo-mobile">
+              <img
+                src="public/logo_footer.png"
+                width="175"
+                height="39"
+                alt=""
+              />
+            </a>
+            <i
+              class="far fa-caret-square-left icon text-3xl text-white hover:text-main cursor-pointer btn-close"
+            ></i>
+          </li>
+          <li><a href="#">Giới thiệu</a></li>
+          <li><a href="#">Đối tượng khách hàng</a></li>
+          <li><a href="#">Quy trình</a></li>
+          <li><a href="#">Bảng giá</a></li>
+          <li><a href="#">Cảm nhận của khách hàng</a></li>
+          <li><a href="#">Đội ngũ bác sĩ</a></li>
+          <li><a href="#">Hình ảnh & Video</a></li>
+          <li>
+            <a href="tel:+1900 1806"> Liên hệ | 1900 1806 </a>
+          </li>
+        </ul>
+      </div>
       <div
         class="fixed inset-0 translate-x-full duration-500 ease-linear bg-black/30 z-40 block xl:hidden bg-over-menu"
       ></div>
@@ -105,13 +161,13 @@
           </div>
         </div>
         <div
-          class="w-[40rem] h-[40rem] bg-linear-Green-Yellow absolute rounded-full top-0 -translate-y-2/3 left-1/2 -translate-x-1/3 z-[2] opacity-10"
+          class="w-[40rem] h-[40rem] blur-3xl bg-linear-Green-Yellow absolute rounded-full top-0 -translate-y-2/3 left-1/2 -translate-x-1/3 z-[2] opacity-20"
         ></div>
         <div
-          class="w-[40rem] h-[40rem] bg-linear-Green-Yellow absolute rounded-full right-1/2 bottom-0 translate-y-2/3 -translate-x-[5rem] z-[1] opacity-10"
+          class="w-[40rem] h-[40rem] blur-3xl bg-linear-Green-Yellow absolute rounded-full right-1/2 bottom-0 translate-y-2/3 -translate-x-[5rem] z-[1] opacity-40"
         ></div>
         <div
-          class="w-[40rem] h-[40rem] bg-linear-Green-Yellow absolute rounded-full right-1/2 top-0 -translate-y-1/2 -translate-x-full z-[1] opacity-30"
+          class="w-[40rem] h-[40rem] bg-linear-Green-Yellow absolute blur-3xl rounded-full right-1/2 top-0 -translate-y-1/2 -translate-x-full z-[1] opacity-35"
         ></div>
         <div class="absolute bg-linear-Green-Yellow inset-0 opacity-10"></div>
         <div
@@ -121,7 +177,7 @@
           <div
             class="space-y-5 z-10 self-center mb-5 md:text-start text-center"
           >
-            <h1 class="font-bold text-3xl md:text-4xl xl:text-5xl 2xl:text-6xl">
+            <h1>
               Dịch vụ Khám bệnh tại nhà <br />
               An tâm chẳng lo ngại đường xa
             </h1>
@@ -133,12 +189,43 @@
             <button
               class="bg-linear-orange text-white flex space-x-2 py-2 px-5 items-center font-bold rounded-full mx-auto md:mx-0 hover:bg-linear-Yellow-Green"
             >
-              <i class="fas fa-file-signature icon"></i>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+              >
+                <g clip-path="url(#clip0_1_11993)">
+                  <path
+                    d="M12.25 2H11.15C10.82 0.85 9.76 0 8.5 0C7.24 0 6.18 0.85 5.85 2H4.75C4.34 2 4 2.34 4 2.75V4.25C4 5.21 4.79 6 5.75 6H11.25C12.21 6 13 5.21 13 4.25V2.75C13 2.34 12.66 2 12.25 2Z"
+                    fill="white"
+                  />
+                  <path
+                    d="M14.25 3H14V4.25C14 5.77 12.77 7 11.25 7H5.75C4.23 7 3 5.77 3 4.25V3H2.75C1.23 3 0 4.23 0 5.75V18.25C0 19.77 1.23 21 2.75 21H10.13L10.35 19.77C10.45 19.21 10.71 18.71 11.11 18.3L11.91 17.5H3.75C3.34 17.5 3 17.16 3 16.75C3 16.34 3.34 16 3.75 16H13.25C13.3 16 13.34 16 13.39 16.02H13.4L17 12.42V5.75C17 4.23 15.77 3 14.25 3ZM13.25 14.25H3.75C3.34 14.25 3 13.91 3 13.5C3 13.09 3.34 12.75 3.75 12.75H13.25C13.66 12.75 14 13.09 14 13.5C14 13.91 13.66 14.25 13.25 14.25ZM13.25 11H3.75C3.34 11 3 10.66 3 10.25C3 9.84 3.34 9.5 3.75 9.5H13.25C13.66 9.5 14 9.84 14 10.25C14 10.66 13.66 11 13.25 11Z"
+                    fill="white"
+                  />
+                  <path
+                    d="M12.527 24.0001C12.33 24.0001 12.138 23.9221 11.997 23.7801C11.824 23.6071 11.746 23.3611 11.789 23.1191L12.319 20.1141C12.345 19.9631 12.419 19.8231 12.527 19.7141L19.952 12.2901C20.864 11.3761 21.76 11.6231 22.25 12.1131L23.487 13.3501C24.17 14.0321 24.17 15.1421 23.487 15.8251L16.062 23.2501C15.954 23.3591 15.814 23.4321 15.662 23.4581L12.657 23.9881C12.614 23.9961 12.57 24.0001 12.527 24.0001ZM15.532 22.7201H15.542H15.532Z"
+                    fill="white"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_1_11993">
+                    <rect width="24" height="24" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
               <span>ĐĂNG KÝ TƯ VẤN</span>
             </button>
           </div>
           <div class="z-10 self-end w-1/2 md:w-fit">
-            <img src="public/img1.png" alt="image-doctor" />
+            <img
+              src="public/img1.png"
+              width="688"
+              height="691"
+              alt="image-doctor"
+            />
           </div>
         </div>
       </section>
@@ -146,26 +233,56 @@
 
       <!-- Start Section 2 -->
       <section class="relative">
-        <div class="container grid grid-cols-5 space-x-5">
-          <div class="col-span-2">
-            <img src="public/img2.png" alt="" />
+        <div
+          class="container flex flex-col-reverse lg:grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-5 space-x-5"
+        >
+          <div class="xl:col-span-2 w-2/3 lg:w-fit self-center relative">
+            <img
+              src="public/img2.png"
+              width="731"
+              height="801"
+              alt="image-doctor"
+            />
+            <span
+              class="absolute top-0 right-0 -translate-x-[2rem] translate-y-[4rem] hidden lg:block"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="48"
+                height="50"
+                viewBox="0 0 48 50"
+                fill="none"
+              >
+                <path
+                  d="M24 45.02C35.0457 45.02 44 35.8374 44 24.51C44 13.1826 35.0457 4 24 4C12.9543 4 4 13.1826 4 24.51C4 35.8374 12.9543 45.02 24 45.02Z"
+                  stroke="#FFC700"
+                  stroke-width="8"
+                  stroke-miterlimit="10"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </span>
           </div>
-          <div class="col-span-3 space-y-5 place-self-center">
-            <div class="flex space-x-2 items-center">
-              <div class="w-[5rem] h-min-1 bg-linear-green"></div>
-              <p class="text-sm font-bold tracking-widest text-linear-green">
+          <div class="xl:col-span-3 space-y-5 place-self-center">
+            <div
+              class="flex space-x-2 items-center justify-center lg:justify-start"
+            >
+              <div class="w-[4rem] h-min-1 bg-linear-green"></div>
+              <p class="font-bold tracking-widest text-linear-green">
                 GIỚI THIỆU
               </p>
+              <div class="w-[4rem] h-min-1 bg-linear-green lg:hidden"></div>
             </div>
-            <h2 class="w-2/3 font-bold">
+            <h2 class="xl:w-2/3">
               Tạo ra tâm lý thoải mái, hỗ trợ điều trị tích cực cho người bệnh
             </h2>
-            <p>
+            <p class="text-justify">
               Dịch vụ khám bệnh tại nhà có thể áp dụng với mọi đối tượng người
               bệnh, đặc biệt tiện lợi đối với những người gặp khó khăn khi di
               chuyển, người già neo đơn, người khuyết tật, gia đình có trẻ nhỏ…
             </p>
-            <p>
+            <p class="text-justify">
               Trẻ nhỏ, cũng như người già, là đối tượng rất dễ mắc bệnh do hệ
               miễn dịch chưa hoàn thiện, sức đề kháng kém. Nhiều cha mẹ e ngại
               việc đưa trẻ đi khám chữa bệnh ở bệnh viện, trạm xá đông người vì
@@ -173,7 +290,7 @@
               không cần chịu đựng tình trạng quá tải, đợi chờ để thăm khám hay
               mất nhiều thời gian và công sức di chuyển để chăm bé.
             </p>
-            <p>
+            <p class="text-justify">
               Người cao tuổi dễ mắc các bệnh về cơ xương khớp, huyết áp, tim
               mạch, tiểu đường.... Đây là những bệnh khó điều trị khỏi dứt điểm
               mà chỉ có thể kiểm soát, phải thường xuyên theo dõi và chăm sóc.
@@ -181,7 +298,9 @@
               ngay tại nơi ở là giải pháp y tế tiện lợi, tiết kiệm thời gian, xử
               trí các tình huống bất ngờ một cách kịp thời và nhanh chóng.
             </p>
-            <div class="flex space-x-3">
+            <div
+              class="flex items-center justify-center lg:justify-start space-y-3 sm:space-y-0 sm:space-x-3 sm:flex-row flex-col"
+            >
               <button
                 class="bg-linear-orange flex items-center py-2 px-4 rounded-full space-x-2 text-white hover:bg-linear-Green-Yellow font-bold"
               >
@@ -243,21 +362,533 @@
           </div>
         </div>
         <div
-          class="trapezoid absolute bottom-0 left-0 -z-10 h-4/5 right-1/2 -translate-x-[15rem]"
+          class="trapezoid absolute -bottom-1 left-0 -z-10 h-4/5 right-1/2 -translate-x-[5rem] xl:-translate-x-[15rem] hidden lg:block"
         ></div>
         <div
-          class="triangle absolute bottom-0 left-0 h-4/5 right-1/2 -translate-x-[15rem]"
+          class="triangle absolute -bottom-1 left-0 h-4/5 right-1/2 -translate-x-[5rem] xl:-translate-x-[15rem] hidden lg:block"
         ></div>
       </section>
       <!-- End Section 2 -->
 
       <!-- Start Section 3 -->
+      <section class="relative">
+        <div
+          class="container grid grid-cols-1 lg:grid-cols-5 space-x-5 place-items-center"
+        >
+          <div class="lg:col-span-3 space-y-5">
+            <div
+              class="flex space-x-2 items-center justify-center lg:justify-start"
+            >
+              <div class="w-[4rem] h-min-1 bg-linear-green"></div>
+              <p class="font-bold tracking-widest text-linear-green">ƯU ĐIỂM</p>
+              <div class="w-[4rem] h-min-1 bg-linear-green lg:hidden"></div>
+            </div>
+            <h2>
+              Vì sao khách hàng nên lựa chọn dịch vụ <br />Khám bệnh tại nhà của
+              Bệnh viện Phương Đông?
+            </h2>
+            <div
+              class="grid grid-cols-1 md:grid-cols-2 pt-5 gap-x-[2rem] space-y-5 lg:space-y-0 xl:gap-x-[3rem]"
+            >
+              <div
+                class="flex flex-col items-center lg:items-start space-y-3 lg:even:pt-[3rem]"
+              >
+                <div
+                  class="p-3 bg-linear-Yellow-Green w-fit rounded-2xl shadow-ct-green-item"
+                >
+                  <svg
+                    width="48"
+                    height="48"
+                    viewBox="0 0 48 48"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M24.0003 32.88L24.7203 30H23.2803L24.0003 32.88Z"
+                      fill="white"
+                    />
+                    <path
+                      d="M13.9999 43.9998H22.9999V37.1198L20.52 27.1998C20.3417 27.1198 20.168 27.0296 19.9999 26.9298V33.2698C20.9566 33.8221 21.2843 35.0453 20.732 36.0019C20.1797 36.9585 18.9566 37.2863 18 36.734C17.0433 36.1817 16.7156 34.9586 17.2679 34.0019C17.4434 33.6979 17.6958 33.4454 18 33.2698V25.3599L16.33 26.3599C15.632 26.7883 15.0213 27.3447 14.53 27.9999C13.8302 28.8735 13.3501 29.9023 13.13 30.9999C13.0468 31.4451 13.0033 31.8969 13 32.3499V42.9999C13 43.5521 13.4477 43.9998 13.9999 43.9998Z"
+                      fill="white"
+                    />
+                    <path
+                      d="M35.0002 42.9997V32.3497C35.0002 28.814 32.7962 27.1486 31.6702 26.4097L30.0002 25.4097V32.2297C31.179 32.6461 31.9758 33.7499 32.0002 34.9997V37.9997C32.0002 38.552 31.5525 38.9998 31.0002 38.9998C30.4479 38.9998 30.0002 38.552 30.0002 37.9997V34.9997C30.0002 34.4474 29.5524 33.9997 29.0001 33.9997C28.4478 33.9997 28.0001 34.4474 28.0001 34.9997V37.9997C28.0001 38.552 27.5523 38.9998 27.0001 38.9998C26.4478 38.9998 26 38.552 26 37.9997V34.9997C26.0036 33.7315 26.8043 32.6024 28 32.1797V26.9297C27.832 27.0296 27.6584 27.1198 27.48 27.1997L25 37.1197V43.9997H34C34.5526 43.9996 35.0002 43.552 35.0002 42.9997Z"
+                      fill="white"
+                    />
+                    <path
+                      d="M31.8501 21.52C31.8501 21.76 31.1701 23.52 31.1001 23.6901L32.6301 24.6301L31.8501 21.52Z"
+                      fill="white"
+                    />
+                    <path
+                      d="M36 21.9297C35.3368 22.0254 34.6632 22.0254 34 21.9297L35 25.8797L36 21.9297Z"
+                      fill="white"
+                    />
+                    <path
+                      d="M42.6701 20.3896L41.0001 19.3296C40.2442 20.1931 39.3045 20.8765 38.2501 21.3296L36.3501 28.9196C36.8127 30.0074 37.0507 31.1774 37.0501 32.3595V37.9995H45.0501C45.6024 37.9995 46.0501 37.5518 46.0501 36.9995V26.3495C46.0275 23.9127 44.7498 21.6598 42.6701 20.3896Z"
+                      fill="white"
+                    />
+                    <path
+                      d="M38.37 18.9999C39.8867 17.7574 40.8354 15.9535 41 13.9999C37.68 13.9999 36.2 12.7599 35.55 11.6699C34.5412 12.411 33.4294 13.0006 32.25 13.42C32.7443 14.5488 32.9997 15.7676 33 17C33 17 33 19.43 32.93 19.63C34.7537 20.1673 36.7175 19.9399 38.37 18.9999Z"
+                      fill="white"
+                    />
+                    <path
+                      d="M42 11.9999V10.9999C41.9934 7.13389 38.8541 4.00517 34.9881 4.01173C33.9843 4.01342 32.9924 4.2311 32.08 4.64979C30.3399 5.64626 28.9949 7.2102 28.27 9.07976C29.3618 9.82301 30.3681 10.6849 31.27 11.6497C32.8712 11.0602 34.3544 10.1899 35.65 9.07976C36.1673 8.88635 36.7435 9.14904 36.9368 9.66635C36.9768 9.77314 36.998 9.88582 37 9.99982C37 10.2698 37.3101 11.9998 41.0001 11.9998H42V11.9999Z"
+                      fill="white"
+                    />
+                    <path
+                      d="M29.9102 19.9999C25.6802 19.9999 23.2202 18.5599 22.0502 17.5898C21.0221 19.0975 19.3152 19.9997 17.4902 19.9999C17.7975 23.3563 20.6299 25.9148 24.0002 25.8799C28.1002 25.8799 29.9102 21.7399 29.9102 19.9999Z"
+                      fill="white"
+                    />
+                    <path
+                      d="M20.8501 15.9997C20.9432 15.7079 21.2045 15.502 21.5101 15.4797C21.7479 15.4482 21.9834 15.5524 22.1201 15.7497C22.2101 15.8596 24.1801 18.3297 29.4301 18.3297H30.1501V15.4297C30.1445 12.2635 27.5762 9.69971 24.41 9.69971H23C19.8377 9.70524 17.2756 12.2674 17.27 15.4297V18.2997H18.0001C19.3522 18.2424 20.5085 17.3092 20.8501 15.9997Z"
+                      fill="white"
+                    />
+                    <path
+                      d="M16.1501 21.52C16.1501 21.76 16.8301 23.52 16.9001 23.6901L15.3701 24.6301L16.1501 21.52Z"
+                      fill="white"
+                    />
+                    <path
+                      d="M12 21.9297C12.6632 22.0254 13.3368 22.0254 14 21.9297L12.9999 25.8797L12 21.9297Z"
+                      fill="white"
+                    />
+                    <path
+                      d="M5.33 20.39L7.05003 19.3301C7.80594 20.1936 8.74559 20.877 9.8 21.33L11.7 28.92C11.2375 30.0079 10.9994 31.1779 11 32.36V38H3.00003C2.44775 38 2 37.5523 2 37V26.35C2.01181 23.9231 3.26938 21.6722 5.33 20.39Z"
+                      fill="white"
+                    />
+                    <path
+                      d="M9.62997 18.9999C8.11328 17.7574 7.16453 15.9535 7 13.9999C10.32 13.9999 11.8 12.7599 12.45 11.6699C13.4588 12.411 14.5705 13.0006 15.75 13.42C15.2556 14.5488 15.0002 15.7676 15 17C15 17 15 19.43 15.07 19.63C13.2463 20.1673 11.2825 19.9399 9.62997 18.9999Z"
+                      fill="white"
+                    />
+                    <path
+                      d="M6 11.9999V10.9999C6.00656 7.13389 9.14587 4.00517 13.0118 4.01173C14.0157 4.01342 15.0076 4.2311 15.92 4.64979C17.6601 5.64626 19.0051 7.2102 19.73 9.07976C18.6382 9.82301 17.6319 10.6849 16.73 11.6497C15.1288 11.0602 13.6456 10.1899 12.35 9.07976C11.8327 8.88635 11.2565 9.14904 11.0632 9.66635C11.0232 9.77314 11.0019 9.88582 11 9.99982C11 10.2698 10.6899 11.9998 6.99994 11.9998H6V11.9999Z"
+                      fill="white"
+                    />
+                  </svg>
+                </div>
+                <p class="text-xl font-semibold">Đội ngũ bác sĩ giàu y đức</p>
+                <span class="text-justify"
+                  >Đội ngũ bác sĩ khám sàng lọc và tư vấn có trình độ chuyên môn
+                  cao, giàu kinh nghiệm, tư vấn tận tình.</span
+                >
+              </div>
+              <div
+                class="flex flex-col items-center lg:items-start space-y-3 lg:even:pt-[3rem]"
+              >
+                <div
+                  class="p-3 bg-linear-Yellow-Green w-fit rounded-2xl shadow-ct-green-item"
+                >
+                  <svg
+                    width="48"
+                    height="48"
+                    viewBox="0 0 48 48"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g clip-path="url(#clip0_1_11950)">
+                      <path
+                        d="M44.3197 40.7842C44.3197 40.7842 38.9921 31.6278 38.0365 29.9856C39.1238 29.6539 40.282 29.361 40.7633 28.5301C41.5653 27.1455 40.1377 24.8742 40.5125 23.3901C40.8987 21.8627 43.1783 20.541 43.1783 18.9884C43.1783 17.4758 40.8215 15.7087 40.4351 14.1902C40.0576 12.7064 41.481 10.4326 40.6764 9.04975C39.8717 7.66672 37.1917 7.78035 36.0884 6.71876C34.9533 5.62629 34.9568 2.95337 33.5877 2.22125C32.2129 1.48641 29.9787 2.97153 28.4523 2.61974C26.9434 2.27197 25.5952 0 24.0191 0C22.4195 0 19.8754 2.57719 19.4764 2.66994C17.9508 3.02458 15.7137 1.5431 14.3404 2.28105C12.9726 3.01563 12.981 5.68881 11.848 6.78309C10.7465 7.84663 8.06635 7.73793 7.26419 9.12252C6.46216 10.5068 7.88981 12.7776 7.51506 14.2625C7.13927 15.7511 4.78026 17.2595 4.78026 18.981C4.78026 20.5337 7.06559 21.8513 7.45409 23.3779C7.8317 24.8617 6.40832 27.1352 7.21295 28.5186C7.651 29.2716 8.64488 29.5808 9.63747 29.8779C9.7533 29.9126 9.97239 30.0422 9.824 30.2584C9.14494 31.4305 3.67937 40.8633 3.67937 40.8633C3.24456 41.6136 3.59764 42.2567 4.46376 42.2932L8.70326 42.47C9.56937 42.5064 10.6559 43.1358 11.1182 43.8691L13.3804 47.4588C13.8427 48.1921 14.5763 48.1784 15.0109 47.4282C15.0109 47.4282 21.3407 36.5002 21.3433 36.4971C21.4703 36.3487 21.5979 36.3792 21.659 36.431C22.3516 37.0207 23.317 37.609 24.1228 37.609C24.913 37.609 25.6448 37.0552 26.3686 36.4377C26.4275 36.3875 26.5708 36.2846 26.6756 36.4981C26.6773 36.5015 33 47.3697 33 47.3697C33.4359 48.1189 34.1696 48.1317 34.6304 47.3975L36.8863 43.8034C37.3473 43.0696 38.4327 42.4378 39.2988 42.4L43.5379 42.2153C44.4036 42.1773 44.7555 41.5333 44.3197 40.7842ZM31.0254 30.9542C26.338 33.6812 20.7116 33.389 16.4141 30.6783C10.117 26.6448 8.04508 18.3009 11.8306 11.7673C15.6593 5.15828 24.0756 2.82625 30.7442 6.45816C30.7792 6.47722 30.8138 6.49694 30.8486 6.5164C30.898 6.54377 30.9473 6.57153 30.9965 6.59955C33.0537 7.78567 34.8377 9.50712 36.1152 11.7028C40.0194 18.4138 37.7362 27.05 31.0254 30.9542Z"
+                        fill="white"
+                      />
+                      <path
+                        d="M29.9532 8.57453C29.9337 8.56325 29.914 8.55274 29.8945 8.54159C26.3323 6.47988 21.792 6.32916 17.9868 8.54301C12.34 11.8282 10.4185 19.0947 13.7037 24.7414C14.7061 26.4645 16.0798 27.84 17.6647 28.8272C17.7995 28.9125 17.9358 28.9965 18.0751 29.0771C23.728 32.3521 30.9906 30.4175 34.2654 24.7649C37.5401 19.112 35.6061 11.8495 29.9532 8.57453ZM31.3673 17.8156L29.388 19.7449C28.775 20.3423 28.3918 21.5217 28.5367 22.3655L29.0039 25.0897C29.1487 25.9335 28.6472 26.2979 27.8894 25.8995L25.4428 24.6132C24.685 24.2149 23.4451 24.2149 22.6873 24.6132L20.2408 25.8995C19.483 26.2979 18.9814 25.9335 19.1262 25.0897L19.5934 22.3655C19.7382 21.5217 19.355 20.3423 18.742 19.7449L16.7628 17.8156C16.1496 17.2181 16.3413 16.6285 17.1885 16.5052L19.9237 16.1078C20.7709 15.9847 21.7741 15.2558 22.153 14.4881L23.3762 12.0097C23.7551 11.242 24.3751 11.242 24.7539 12.0097L25.9773 14.4881C26.3562 15.2558 27.3592 15.9847 28.2066 16.1078L30.9417 16.5052C31.7888 16.6285 31.9804 17.2181 31.3673 17.8156Z"
+                        fill="white"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_1_11950">
+                        <rect width="48" height="48" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </div>
+                <p class="text-xl font-semibold">Chất lượng dịch vụ hàng đầu</p>
+                <span class="text-justify"
+                  >Trang bị đầy đủ phương tiện y tế cùng ekip cấp cứu luôn túc
+                  trực giúp theo dõi và xử trí kịp thời các trường hợp</span
+                >
+              </div>
+              <div
+                class="flex flex-col items-center lg:items-start space-y-3 lg:even:pt-[3rem]"
+              >
+                <div
+                  class="p-3 bg-linear-Yellow-Green w-fit rounded-2xl shadow-ct-green-item"
+                >
+                  <svg
+                    width="48"
+                    height="48"
+                    viewBox="0 0 48 48"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M39.5289 14.6687C39.849 14.4127 39.9032 13.9497 39.6471 13.6296C39.396 13.3095 38.9331 13.2553 38.613 13.5114C38.5293 13.5754 37.244 14.6095 36.2295 16.471L37.239 17.7662C38.1352 15.8064 39.4993 14.6885 39.5289 14.6687Z"
+                      fill="white"
+                    />
+                    <path
+                      d="M46.3445 22.6123C45.3104 21.9278 43.5031 20.9822 41.5529 21.1546C39.4008 21.3466 37.6477 22.8437 36.8302 23.6809C36.5347 22.6172 36.4264 21.5683 36.5101 20.5439C36.3624 20.5883 36.2048 20.608 36.0472 20.608H35.9881L35.0327 20.5489C34.8653 22.9571 35.5794 25.4243 37.17 27.9112C36.0964 28.2904 33.9148 29.2704 32.8264 31.2156C31.8661 32.9244 31.9844 34.9583 32.1862 36.1845C32.2847 36.7952 32.92 37.1547 33.4962 36.9183C34.6485 36.4505 36.446 35.4902 37.4013 33.7814C38.2532 32.2646 38.2582 30.4819 38.1006 29.2458C38.465 29.7284 38.8689 30.2159 39.3022 30.6986C39.45 30.861 39.6519 30.9448 39.8537 30.9448C40.0261 30.9448 40.2034 30.8807 40.3462 30.7576C40.6516 30.4818 40.6761 30.019 40.4053 29.7136C38.9673 28.1082 37.9233 26.5175 37.2733 24.9565C38.3173 25.641 40.0951 26.5471 42.0107 26.3797C43.9609 26.2123 45.5761 24.9713 46.4774 24.1143C46.9256 23.6858 46.8616 22.957 46.3445 22.6123Z"
+                      fill="white"
+                    />
+                    <path
+                      d="M22.982 16.6885C20.6867 12.2997 19.7883 7.71996 20.3142 3.05225C17.9976 3.65675 16.94 4.99465 17.0036 7.2064C17.0377 8.43059 16.6116 9.63912 15.8042 10.6104C14.3653 12.342 13.5962 14.0789 13.4971 15.7781C15.2662 17.5358 17.3426 19.1842 19.7552 20.7236L22.982 16.6885Z"
+                      fill="white"
+                    />
+                    <path
+                      d="M36.0381 19.1318C36.1401 19.1352 36.1881 19.0813 36.2142 19.0325C36.2401 18.9835 36.2584 18.9085 36.1968 18.8291L34.2087 16.275C34.0774 16.1064 34.0255 15.8893 34.0663 15.6798C34.0716 15.6529 34.0783 15.6233 34.0808 15.5964C34.3924 13.6217 33.1902 12.3579 32.0672 11.862C30.9303 11.3602 29.1639 11.3227 27.9275 12.8698L21.0266 21.4993C21.1693 21.5843 21.3038 21.672 21.4486 21.7564C21.8011 21.9617 21.9204 22.4141 21.7151 22.7666C21.5098 23.1194 21.0562 23.2379 20.7051 23.0327C20.3346 22.8168 19.9816 22.5952 19.6242 22.3751C19.5662 22.3498 19.5099 22.3195 19.4581 22.2781C19.4539 22.2748 19.451 22.2706 19.447 22.2672C10.9975 17.0149 6.21444 10.5426 4.88666 2.53467C2.45131 3.94926 1.70975 5.78807 2.55275 8.26064C2.95334 9.43429 2.88022 10.7441 2.34641 11.9486C0.413657 16.3117 0.972031 19.8068 4.05378 22.6341C4.7915 23.311 5.31903 24.2312 5.54028 25.2255C6.52231 29.6437 9.32947 31.7278 14.1044 31.608C14.5195 31.5884 14.8513 31.9195 14.8618 32.3275C14.8724 32.7353 14.5507 33.0744 14.1429 33.0849C13.9962 33.0887 13.8505 33.0907 13.7067 33.0907C13.0577 33.0907 12.4403 33.0514 11.8532 32.9744L5.54459 40.8611C5.02278 41.5123 4.85206 42.3817 5.08775 43.1875C5.31472 43.9635 5.8745 44.5535 6.62328 44.8067C9.96809 45.9372 13.738 45.612 17.8277 43.8389C18.8242 43.4053 19.419 42.3779 19.3075 41.282L19.0708 38.8914C18.9324 37.5275 19.873 36.2855 21.2128 36.0658C25.0376 35.4375 27.9226 33.8113 29.5553 31.3631C31.1582 28.9597 31.5535 25.7744 30.6989 22.1511C30.5104 21.3504 30.7071 20.5289 31.239 19.8971C31.7772 19.258 32.564 18.9215 33.3973 18.9689L36.0381 19.1318ZM30.7676 16.1271C30.2025 16.1271 29.7505 15.6709 29.7505 15.1059C29.7505 14.5451 30.2025 14.0888 30.7676 14.0888C31.3285 14.0888 31.7847 14.5451 31.7847 15.1059C31.7847 15.6708 31.3285 16.1271 30.7676 16.1271Z"
+                      fill="white"
+                    />
+                  </svg>
+                </div>
+                <p class="text-xl font-semibold">Cảm giác thư thái, bình yên</p>
+                <span class="text-justify"
+                  >Không gian bệnh viện theo mô hình khách sạn hiện đại, khuôn
+                  viên rộng gần 10ha với hàng vạn cây xanh</span
+                >
+              </div>
+              <div
+                class="flex flex-col items-center lg:items-start space-y-3 lg:even:pt-[3rem]"
+              >
+                <div
+                  class="p-3 bg-linear-Yellow-Green w-fit rounded-2xl shadow-ct-green-item"
+                >
+                  <svg
+                    width="48"
+                    height="48"
+                    viewBox="0 0 48 48"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M29.625 25.3125C36.6039 25.3125 42.2812 19.6351 42.2812 12.6562C42.2812 5.67737 36.6039 0 29.625 0C22.6461 0 16.9688 5.67737 16.9688 12.6562C16.9688 19.6351 22.6461 25.3125 29.625 25.3125ZM28.2188 5.88391V4.27515C28.2188 3.49768 28.8479 2.8689 29.625 2.8689C30.4021 2.8689 31.0312 3.49768 31.0312 4.27515V5.89966C31.9592 6.23181 32.7719 6.85693 33.278 7.73291C33.668 8.40601 33.4373 9.2655 32.7656 9.65405C32.0874 10.0455 31.2305 9.81335 30.8445 9.14209C30.5933 8.70667 30.1263 8.4375 29.625 8.4375C28.849 8.4375 28.2188 9.06775 28.2188 9.84375C28.2188 10.6198 28.849 11.25 29.625 11.25C31.9512 11.25 33.8438 13.1426 33.8438 15.4688C33.8438 17.2998 32.6646 18.8459 31.0312 19.4286V20.9813C31.0312 21.7584 30.4021 22.3876 29.625 22.3876C28.8479 22.3876 28.2188 21.7584 28.2188 20.9813V19.4128C27.2908 19.0803 26.4781 18.4556 25.972 17.5796C25.582 16.9065 25.8127 16.047 26.4844 15.6584C27.1571 15.2629 28.0181 15.4977 28.4055 16.1704C28.6567 16.6058 29.1237 16.875 29.625 16.875C30.401 16.875 31.0312 16.2448 31.0312 15.4688C31.0312 14.6927 30.401 14.0625 29.625 14.0625C27.2988 14.0625 25.4062 12.1699 25.4062 9.84375C25.4062 8.0127 26.5854 6.46655 28.2188 5.88391Z"
+                      fill="white"
+                    />
+                    <path
+                      d="M46.3605 27.1232C45.3717 26.7339 44.2456 26.9888 43.5205 27.7652C43.5319 27.7535 40.7585 30.6319 36.4592 35.2121C35.7843 35.9716 34.8563 36.4217 33.8438 36.5059C33.568 36.5982 22.7439 36.5623 22.4531 36.5623C21.6654 36.5623 21.0469 35.9434 21.0469 35.1561C21.0469 34.3683 21.6654 33.7498 22.4531 33.7498H32.4375C33.991 33.7498 35.25 32.4904 35.25 30.9373C35.25 29.3839 33.991 28.1248 32.4375 28.1248H24.5343L23.4657 27.1965C19.7391 23.9599 14.1984 23.9599 10.4718 27.1965L9.4032 28.1248H1.40625C0.629517 28.1248 0 28.7543 0 29.5311V40.7811C0 41.5578 0.629517 42.1873 1.40625 42.1873H9.74048C10.5 42.4122 11.2592 42.7498 12.0751 43.0875C14.1562 43.9872 16.519 44.9998 19.8937 44.9998H33.8438C36.0571 44.9998 38.1409 43.9579 39.4688 42.1873L47.1562 32.0623C47.7188 31.331 48 30.459 48 29.5311C47.9996 28.4672 47.3492 27.5129 46.3605 27.1232Z"
+                      fill="white"
+                    />
+                  </svg>
+                </div>
+                <p class="text-xl font-semibold">Chi phí hợp lý, tiết kiệm</p>
+                <span class="text-justify"
+                  >Xây dựng đa dạng gói khám với chi phí hợp lý, hỗ trợ trả góp
+                  qua thẻ tín dụng 0% lãi suất khi mua trọn gói.
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="lg:col-span-2 w-1/2 lg:w-fit">
+            <img
+              src="public/img3.png"
+              width="636"
+              height="778"
+              alt="image-doctor"
+            />
+          </div>
+        </div>
+        <div
+          class="trapezoid-2 absolute bottom-[4.5rem] xl:bottom-3 2xl:bottom-0 left-half-11rem 2xl:left-half-15rem h-3/5 xl:h-4/5 right-0 -z-10 hidden lg:block"
+        ></div>
+        <div
+          class="triangle-2 absolute bottom-[4.5rem] xl:bottom-3 2xl:bottom-0 right-0 h-3/5 xl:h-4/5 left-half-11rem 2xl:left-half-15rem hidden lg:block"
+        ></div>
+      </section>
       <!-- End Section 3 -->
 
       <!-- Start Section 4 -->
+      <section>
+        <div class="container grid lg:grid-cols-5 space-x-5">
+          <div class="lg:col-span-2 space-y-5">
+            <div
+              class="flex space-x-2 items-center justify-center lg:justify-start"
+            >
+              <div class="w-[4rem] h-min-1 bg-linear-green"></div>
+              <p class="font-bold tracking-widest text-linear-green">
+                HÌNH ẢNH
+              </p>
+              <div class="w-[4rem] h-min-1 bg-linear-green lg:hidden"></div>
+            </div>
+            <h2>Hình ảnh khách hàng sử dụng dịch vụ Khám bệnh tại nhà</h2>
+            <p class="">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sapien,
+              nec morbi mauris, turpis fringilla condimentum urna sagittis est.
+              Id tortor odio posuere a cursus netus massa. Tellus etiam nisl
+              pretium feugiat nulla. Pulvinar nisl et suspendisse velit ornare
+              sed dolor, convallis dolor. Et, dignissim amet sed orci at amet id
+              nulla mauris. Sagittis turpis eget mauris massa congue in rutrum
+              vel. Augue est nunc a id quis mattis. Lorem ipsum dolor sit amet,
+              consectetur.
+            </p>
+            <button
+              class="bg-linear-orange flex items-center py-2 px-4 rounded-full space-x-2 text-white hover:bg-linear-Green-Yellow font-bold mx-auto lg:mx-0"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+              >
+                <g clip-path="url(#clip0_1_11993)">
+                  <path
+                    d="M12.25 2H11.15C10.82 0.85 9.76 0 8.5 0C7.24 0 6.18 0.85 5.85 2H4.75C4.34 2 4 2.34 4 2.75V4.25C4 5.21 4.79 6 5.75 6H11.25C12.21 6 13 5.21 13 4.25V2.75C13 2.34 12.66 2 12.25 2Z"
+                    fill="white"
+                  />
+                  <path
+                    d="M14.25 3H14V4.25C14 5.77 12.77 7 11.25 7H5.75C4.23 7 3 5.77 3 4.25V3H2.75C1.23 3 0 4.23 0 5.75V18.25C0 19.77 1.23 21 2.75 21H10.13L10.35 19.77C10.45 19.21 10.71 18.71 11.11 18.3L11.91 17.5H3.75C3.34 17.5 3 17.16 3 16.75C3 16.34 3.34 16 3.75 16H13.25C13.3 16 13.34 16 13.39 16.02H13.4L17 12.42V5.75C17 4.23 15.77 3 14.25 3ZM13.25 14.25H3.75C3.34 14.25 3 13.91 3 13.5C3 13.09 3.34 12.75 3.75 12.75H13.25C13.66 12.75 14 13.09 14 13.5C14 13.91 13.66 14.25 13.25 14.25ZM13.25 11H3.75C3.34 11 3 10.66 3 10.25C3 9.84 3.34 9.5 3.75 9.5H13.25C13.66 9.5 14 9.84 14 10.25C14 10.66 13.66 11 13.25 11Z"
+                    fill="white"
+                  />
+                  <path
+                    d="M12.527 24.0001C12.33 24.0001 12.138 23.9221 11.997 23.7801C11.824 23.6071 11.746 23.3611 11.789 23.1191L12.319 20.1141C12.345 19.9631 12.419 19.8231 12.527 19.7141L19.952 12.2901C20.864 11.3761 21.76 11.6231 22.25 12.1131L23.487 13.3501C24.17 14.0321 24.17 15.1421 23.487 15.8251L16.062 23.2501C15.954 23.3591 15.814 23.4321 15.662 23.4581L12.657 23.9881C12.614 23.9961 12.57 24.0001 12.527 24.0001ZM15.532 22.7201H15.542H15.532Z"
+                    fill="white"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_1_11993">
+                    <rect width="24" height="24" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+              <span>ĐĂNG KÝ TƯ VẤN</span>
+            </button>
+          </div>
+          <div class="col-span-3">
+            <!-- <div class="swiper mySwiper sample-slider">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img
+                    src="public/img4.png"
+                    width="386"
+                    height="234"
+                    alt="Image User"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="public/img5.png"
+                    width="386"
+                    height="234"
+                    alt="Image User"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="public/img6.png"
+                    width="386"
+                    height="234"
+                    alt="Image User"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="public/img7.png"
+                    width="386"
+                    height="234"
+                    alt="Image User"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="public/img8.png"
+                    width="386"
+                    height="234"
+                    alt="Image User"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="public/img9.png"
+                    width="386"
+                    height="234"
+                    alt="Image User"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="public/img10.png"
+                    width="386"
+                    height="234"
+                    alt="Image User"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="public/img11.png"
+                    width="386"
+                    height="234"
+                    alt="Image User"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="public/img12.png"
+                    width="386"
+                    height="234"
+                    alt="Image User"
+                  />
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div> -->
+          </div>
+        </div>
+      </section>
       <!-- End Section 4 -->
 
       <!-- Start Section 5 -->
+      <section class="bg-none trapezoid-2 relative overflow-hidden">
+        <div
+          class="container flex flex-col-reverse lg:grid grid-cols-2 pt-5 lg:pt-[10rem] lg:pb-[5rem] space-x-5"
+        >
+          <div
+            class="z-10 w-1/2 mx-auto lg:mx-0 lg:w-fit place-self-end justify-self-start"
+          >
+            <img
+              src="public/img13.png"
+              width="559"
+              height="756"
+              alt="image-doctor"
+            />
+          </div>
+          <div class="z-10 space-y-5">
+            <div
+              class="flex space-x-2 items-center justify-center lg:justify-start"
+            >
+              <div class="w-[4rem] h-min-1 bg-linear-green"></div>
+              <p class="font-bold tracking-widest text-linear-green">CÂU HỎI</p>
+              <div class="w-[4rem] h-min-1 bg-linear-green lg:hidden"></div>
+            </div>
+            <h2>Những câu hỏi thường gặp</h2>
+            <details>
+              <summary>
+                Bệnh viện Đa khoa Phương Đông có dịch vụ thai sản trọn gói
+                không?
+              </summary>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
+                nobis, nesciunt perspiciatis ad quam neque.
+              </p>
+            </details>
+            <details>
+              <summary>
+                Bệnh viện Đa khoa Phương Đông có phục vụ ăn uống ngay trong
+                khuôn viên không?
+              </summary>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
+                nobis, nesciunt perspiciatis ad quam neque.
+              </p>
+            </details>
+            <details>
+              <summary>
+                Bệnh viện Đa khoa Phương Đông có áp dụng Bảo hiểm Y tế, Bảo hiểm
+                Bảo lãnh không?
+              </summary>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
+                nobis, nesciunt perspiciatis ad quam neque.
+              </p>
+            </details>
+            <details>
+              <summary>
+                Bệnh viện Đa khoa Phương Đông có dịch vụ tiêm chủng trẻ em
+                không?
+              </summary>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
+                nobis, nesciunt perspiciatis ad quam neque.
+              </p>
+            </details>
+            <details>
+              <summary>
+                Thời gian hoạt động của Bệnh viện Đa khoa Phương Đông như thế
+                nào?
+              </summary>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
+                nobis, nesciunt perspiciatis ad quam neque.
+              </p>
+            </details>
+            <details>
+              <summary>
+                Thời gian hoạt động của Bệnh viện Đa khoa Phương Đông như thế
+                nào?
+              </summary>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
+                nobis, nesciunt perspiciatis ad quam neque.
+              </p>
+            </details>
+            <details>
+              <summary>
+                Bệnh viện Đa khoa Phương Đông được đầu tư về cơ sở vật chất như
+                thế nào?
+              </summary>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
+                nobis, nesciunt perspiciatis ad quam neque.
+              </p>
+            </details>
+            <details>
+              <summary>
+                Có thể tham khảo lịch khám chi tiết của Bệnh viện Đa khoa Phương
+                Đông ở đâu?
+              </summary>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
+                nobis, nesciunt perspiciatis ad quam neque.
+              </p>
+            </details>
+            <details>
+              <summary>
+                Bệnh viện Đa khoa Phương Đông đang triển khai các gói khám sức
+                khỏe nào?
+              </summary>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
+                nobis, nesciunt perspiciatis ad quam neque.
+              </p>
+            </details>
+            <details>
+              <summary>
+                Thời gian hoạt động của Bệnh viện Đa khoa Phương Đông như thế
+                nào?
+              </summary>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
+                nobis, nesciunt perspiciatis ad quam neque.
+              </p>
+            </details>
+          </div>
+        </div>
+        <div
+          class="absolute right-1/2 translate-x-[30rem] sm:translate-x-[35rem] lg:translate-x-[20rem] 2xl:translate-x-[15rem] bottom-0 translate-y-[8rem] sm:translate-y-[12rem] lg:translate-y-[8rem] z-[1]"
+        >
+          <div
+            class="xl:size-[60rem] size-[40rem] sm:size-[50rem] 2xl:size-[65rem] relative translate-y-[6rem] -translate-x-[10rem]"
+          >
+            <div
+              class="absolute inset-0 bg-linear-Green-Yellow opacity-5 rounded-full"
+            ></div>
+            <div
+              class="absolute inset-[7%] bg-linear-Green-Yellow opacity-10 rounded-full"
+            ></div>
+            <div
+              class="absolute inset-[14%] bg-linear-Green-Yellow opacity-15 rounded-full"
+            ></div>
+            <div
+              class="absolute inset-[21%] bg-linear-Green-Yellow rounded-full"
+            ></div>
+          </div>
+        </div>
+        <div
+          class="absolute size-[50rem] opacity-15 translate-x-[20rem] -translate-y-[12rem] rounded-full bg-[#0A9949] blur-lg top-0 left-1/2 z-[2]"
+        ></div>
+        <div
+          class="absolute size-[50rem] opacity-25 -translate-x-[35rem] -translate-y-[15rem] rounded-full bg-[#0A9949] blur-3xl top-0 right-1/2 z-[2]"
+        ></div>
+        <div
+          class="absolute size-[40rem] opacity-25 translate-x-full xl:translate-x-2/3 translate-y-[10rem] rounded-full bg-[#FFC700] blur-3xl bottom-0 right-1/2 z-[2]"
+        ></div>
+      </section>
       <!-- End Section 5 -->
 
       <!-- Start Section 6 -->
@@ -270,13 +901,299 @@
       <!-- End Section 8 -->
 
       <!-- Start Section 9 -->
+      <section class="bg-linear-layout py-16 relative">
+        <div
+          class="bg-[url('../public/layout.png')] bg-no-repeat bg-center bg-cover absolute inset-0 -z-10"
+        ></div>
+        <div class="container grid grid-cols-1 py-5 xl:grid-cols-2 xl:py-0">
+          <p
+            class="font-Allura text-4xl xl:text-5xl 2xl:text-6xl xl:w-2/3 text-center xl:text-start self-center place-self-center text-white pb-5 xl:pb-0"
+          >
+            Chúng tôi luôn tin tưởng rằng Dịch vụ của Phương Đông sẽ làm Quý
+            khách hài lòng!
+          </p>
+          <div class="my-auto overflow-hidden rounded-2xl shadow-custom">
+            <div class="bg-linear-Green-Yellow p-5 text-center text-white">
+              <h4 class="text-xl font-bold">ĐĂNG KÝ TƯ VẤN MIỄN PHÍ</h4>
+              <p class="text-sm">
+                Đặt hẹn ngay để nhận tư vấn và chúng tôi sẽ xếp lịch khám kịp
+                thời!
+              </p>
+            </div>
+            <form action="" class="flex flex-col space-y-2 bg-white p-4">
+              <input
+                class="rounded-lg bg-[#F5F5F5] px-4 py-2 outline-none"
+                type="text"
+                required
+                placeholder="Họ và tên (*)"
+              />
+              <input
+                class="rounded-lg bg-[#F5F5F5] px-4 py-2 outline-none"
+                type="tel"
+                required
+                placeholder="Số điện thoại (*)"
+                pattern="[0-9]{10,12}"
+                title="Số điện thoại từ 10 đến 12 chữ số"
+              />
+              <input
+                class="rounded-lg bg-[#F5F5F5] px-4 py-2 outline-none"
+                type="email"
+                placeholder="E-mail"
+                pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
+                title="Vui lòng nhập một địa chỉ email hợp lệ dạng : user@example.com"
+              />
+              <textarea
+                class="rounded-lg bg-[#F5F5F5] px-4 py-2 outline-none"
+                rows="2"
+                placeholder="Nội dung..."
+              ></textarea>
+              <button
+                class="mx-auto my-3 flex w-fit gap-2 rounded-full bg-linear-orange px-5 py-2 text-white hover:opacity-80"
+              >
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g clipPath="url(#clip0_1_14809)">
+                    <path
+                      d="M12.25 2H11.15C10.82 0.85 9.76 0 8.5 0C7.24 0 6.18 0.85 5.85 2H4.75C4.34 2 4 2.34 4 2.75V4.25C4 5.21 4.79 6 5.75 6H11.25C12.21 6 13 5.21 13 4.25V2.75C13 2.34 12.66 2 12.25 2Z"
+                      fill="white"
+                    />
+                    <path
+                      d="M14.25 3H14V4.25C14 5.77 12.77 7 11.25 7H5.75C4.23 7 3 5.77 3 4.25V3H2.75C1.23 3 0 4.23 0 5.75V18.25C0 19.77 1.23 21 2.75 21H10.13L10.35 19.77C10.45 19.21 10.71 18.71 11.11 18.3L11.91 17.5H3.75C3.34 17.5 3 17.16 3 16.75C3 16.34 3.34 16 3.75 16H13.25C13.3 16 13.34 16 13.39 16.02H13.4L17 12.42V5.75C17 4.23 15.77 3 14.25 3ZM13.25 14.25H3.75C3.34 14.25 3 13.91 3 13.5C3 13.09 3.34 12.75 3.75 12.75H13.25C13.66 12.75 14 13.09 14 13.5C14 13.91 13.66 14.25 13.25 14.25ZM13.25 11H3.75C3.34 11 3 10.66 3 10.25C3 9.84 3.34 9.5 3.75 9.5H13.25C13.66 9.5 14 9.84 14 10.25C14 10.66 13.66 11 13.25 11Z"
+                      fill="white"
+                    />
+                    <path
+                      d="M12.527 23.9999C12.33 23.9999 12.138 23.9219 11.997 23.7799C11.824 23.6069 11.746 23.3609 11.789 23.1189L12.319 20.1139C12.345 19.9629 12.419 19.8229 12.527 19.7139L19.952 12.2899C20.864 11.3759 21.76 11.6229 22.25 12.1129L23.487 13.3499C24.17 14.0319 24.17 15.1419 23.487 15.8249L16.062 23.2499C15.954 23.3589 15.814 23.4319 15.662 23.4579L12.657 23.9879C12.614 23.9959 12.57 23.9999 12.527 23.9999ZM15.532 22.7199H15.542H15.532Z"
+                      fill="white"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_1_14809">
+                      <rect width="24" height="24" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+                Đăng kí tư vấn
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
       <!-- End Section 9 -->
     </main>
 
     <!-- Footer -->
-    <footer></footer>
+    <footer
+      class="bg-linear-Green-Yellow text-white relative overflow-hidden z-0"
+    >
+      <div
+        class="absolute inset-x-0 bottom-0 -z-10 translate-y-[15rem] h-fit opacity-20"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="1920"
+          height="268"
+          viewBox="0 0 1920 268"
+          fill="none"
+        >
+          <path
+            d="M-12.373 169.975C231.183 255.717 641.186 206.623 1104.75 60.7139C1591.01 -90.5851 1914.83 61.4243 2093.21 358.118"
+            stroke="white"
+            stroke-width="1.3"
+            stroke-miterlimit="10"
+          />
+        </svg>
+      </div>
+      <div
+        class="absolute inset-x-0 bottom-0 -z-10 translate-y-[10rem] h-fit opacity-20"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="1920"
+          height="268"
+          viewBox="0 0 1920 268"
+          fill="none"
+        >
+          <path
+            d="M-12.373 169.975C231.183 255.717 641.186 206.623 1104.75 60.7139C1591.01 -90.5851 1914.83 61.4243 2093.21 358.118"
+            stroke="white"
+            stroke-width="1.3"
+            stroke-miterlimit="10"
+          />
+        </svg>
+      </div>
+      <div
+        class="absolute inset-x-0 bottom-0 -z-10 translate-y-[5rem] h-fit opacity-20"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="1920"
+          height="268"
+          viewBox="0 0 1920 268"
+          fill="none"
+        >
+          <path
+            d="M-12.373 169.975C231.183 255.717 641.186 206.623 1104.75 60.7139C1591.01 -90.5851 1914.83 61.4243 2093.21 358.118"
+            stroke="white"
+            stroke-width="1.3"
+            stroke-miterlimit="10"
+          />
+        </svg>
+      </div>
+      <div class="absolute inset-x-0 bottom-0 -z-10 h-fit opacity-20">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="1920"
+          height="268"
+          viewBox="0 0 1920 268"
+          fill="none"
+        >
+          <path
+            d="M-12.373 169.975C231.183 255.717 641.186 206.623 1104.75 60.7139C1591.01 -90.5851 1914.83 61.4243 2093.21 358.118"
+            stroke="white"
+            stroke-width="1.3"
+            stroke-miterlimit="10"
+          />
+        </svg>
+      </div>
+      <div
+        class="absolute inset-x-0 bottom-0 -z-10 translate-y-[-5rem] h-fit opacity-20"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="1920"
+          height="268"
+          viewBox="0 0 1920 268"
+          fill="none"
+        >
+          <path
+            d="M-12.373 169.975C231.183 255.717 641.186 206.623 1104.75 60.7139C1591.01 -90.5851 1914.83 61.4243 2093.21 358.118"
+            stroke="white"
+            stroke-width="1.3"
+            stroke-miterlimit="10"
+          />
+        </svg>
+      </div>
+      <div
+        class="absolute inset-x-0 bottom-0 -z-10 translate-y-[-10rem] h-fit opacity-20"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="1920"
+          height="268"
+          viewBox="0 0 1920 268"
+          fill="none"
+        >
+          <path
+            d="M-12.373 169.975C231.183 255.717 641.186 206.623 1104.75 60.7139C1591.01 -90.5851 1914.83 61.4243 2093.21 358.118"
+            stroke="white"
+            stroke-width="1.3"
+            stroke-miterlimit="10"
+          />
+        </svg>
+      </div>
+      <div
+        class="absolute inset-x-0 bottom-0 -z-10 translate-y-[-15rem] h-fit opacity-20"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="1920"
+          height="268"
+          viewBox="0 0 1920 268"
+          fill="none"
+        >
+          <path
+            d="M-12.373 169.975C231.183 255.717 641.186 206.623 1104.75 60.7139C1591.01 -90.5851 1914.83 61.4243 2093.21 358.118"
+            stroke="white"
+            stroke-width="1.3"
+            stroke-miterlimit="10"
+          />
+        </svg>
+      </div>
+      <div class="container py-8 z-10">
+        <a href="/" class="mb-6 block"
+          ><img src="public/logo_footer.png" alt=""
+        /></a>
+        <div
+          class="grid grid-cols-1 gap-5 md:grid-cols-2 xl:flex xl:justify-between"
+        >
+          <div class="flex flex-col space-y-3 text-lg">
+            <h6 class="text-xl font-bold">BỆNH VIỆN ĐA KHOA PHƯƠNG ĐÔNG</h6>
+            <p>
+              <span class="font-bold">Địa chỉ:</span> Số 9, Phố Viên, P. Cổ Nhuế
+              2, Q. Bắc Từ Liêm, HN
+            </p>
+            <p>
+              <span class="font-bold">Email:</span>
+              <a href="mailto:bvphuongdong@phuongdonghospital.vn"
+                >bvphuongdong@phuongdonghospital.vn</a
+              >
+            </p>
+            <p>
+              <span class="font-bold">Hotline:</span>
+              <a href="tel:+1900 1806">1900 1806</a>
+            </p>
+          </div>
+          <div class="flex flex-col space-y-3 text-lg">
+            <h6 class="text-xl font-bold">Thời gian mở cửa</h6>
+            <p>
+              <span class="font-bold">Thứ 2 - Chủ nhật :</span> 07:30 -19:00
+            </p>
+            <p>
+              <span class="font-bold">Cấp cứu 24/7:</span>
+              <a href="tel:+0833 015 115">0833 015 115</a>
+            </p>
+          </div>
+          <div class="flex flex-col space-y-3 text-lg">
+            <h6 class="text-xl font-bold">Liên hệ</h6>
+            <p>
+              <span class="font-bold">Hotline Tiêm chủng:</span>
+              <a href="tel:+0911 615 115">0911 615 115</a>
+            </p>
+            <p>
+              <span class="font-bold">Hotline Khoa sản :</span>
+              <a href="tel:+0911 615 115">0911 615 115</a>
+            </p>
+          </div>
+          <div class="flex flex-col gap-3">
+            <h6 class="text-xl font-bold">Mạng xã hội</h6>
+            <div class="flex space-x-5 text-3xl">
+              <a href="#"><i class="fab fa-facebook"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-youtube"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="w-full h-min-1 bg-white my-5"></div>
+        <p class="text-center">
+          © Copyright 2022 Bệnh Viện Đa khoa Phương Đông. All Rights Reserved.
+          Designed and developed by
+          <a href="https://tech5s.com.vn/" target="_blank">Tech5S</a>
+        </p>
+      </div>
+    </footer>
 
     <!-- Scripts -->
     <script src="src/main.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 3,
+        grid: {
+          rows: 2,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      })
+    </script>
   </body>
 </html>
