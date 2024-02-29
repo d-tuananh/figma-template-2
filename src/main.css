@@ -1258,10 +1258,6 @@ img[alt="Image item"]{
   margin-bottom: 1.5rem;
 }
 
-.mb-7{
-  margin-bottom: 1.75rem;
-}
-
 .ml-10{
   margin-left: 2.5rem;
 }
@@ -2195,6 +2191,7 @@ img[alt="Image item"]{
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 2rem;
 }
 
 .swiper-slide img {
@@ -2214,10 +2211,6 @@ img[alt="Image item"]{
 .swiper .swiper-pagination-bullet {
   width: 1rem;
   border-radius: 1rem;
-}
-
-.swiper-pagination-bullets.swiper-pagination-horizontal {
-  bottom: 0;
 }
 
 @media (max-width: 1024px) {

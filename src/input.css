@@ -161,6 +161,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 2rem;
 }
 
 .swiper-slide img {
@@ -179,10 +180,6 @@
 .swiper .swiper-pagination-bullet {
   width: 1rem;
   border-radius: 1rem;
-}
-
-.swiper-pagination-bullets.swiper-pagination-horizontal {
-  bottom: 0;
 }
 
 @media (max-width: 1024px) {
