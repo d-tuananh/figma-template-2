@@ -181,6 +181,10 @@
   border-radius: 1rem;
 }
 
+.swiper-pagination-bullets.swiper-pagination-horizontal {
+  bottom: 0;
+}
+
 @media (max-width: 1024px) {
   .trapezoid-2,
   .trapezoid {

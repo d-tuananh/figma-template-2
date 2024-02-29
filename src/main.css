@@ -2001,10 +2001,6 @@ img[alt="Image item"]{
   padding-top: 5rem;
 }
 
-.pb-7{
-  padding-bottom: 1.75rem;
-}
-
 .text-center{
   text-align: center;
 }
@@ -2218,6 +2214,10 @@ img[alt="Image item"]{
 .swiper .swiper-pagination-bullet {
   width: 1rem;
   border-radius: 1rem;
+}
+
+.swiper-pagination-bullets.swiper-pagination-horizontal {
+  bottom: 0;
 }
 
 @media (max-width: 1024px) {
