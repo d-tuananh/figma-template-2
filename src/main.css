@@ -2191,7 +2191,7 @@ img[alt="Image item"]{
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 2rem;
+  padding-bottom: 2rem;
 }
 
 .swiper-slide img {
