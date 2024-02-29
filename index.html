@@ -2648,7 +2648,23 @@
     </footer>
 
     <!-- Scripts -->
-    <script src="src/main.js" defer></script>
+    <script>
+      // Toggle Menu
+      let toggleMenu = document.querySelector(".menu-moblie")
+      let btnMenu = document.querySelector(".btn-menu")
+      let bgOverMenu = document.querySelector(".bg-over-menu")
+      let btnClose = document.querySelector(".btn-close")
+
+      const buttons = [btnMenu, bgOverMenu, btnClose]
+
+      buttons.forEach((btn) => {
+        btn.addEventListener("click", (e) => {
+          e.preventDefault()
+          toggleMenu.classList.toggle("-translate-x-[120%]")
+          bgOverMenu.classList.toggle("translate-x-full")
+        })
+      })
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
     <!-- Initialize Swiper -->
