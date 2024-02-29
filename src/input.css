@@ -22,13 +22,21 @@
   }
 
   footer a {
-    @apply hover:text-main;
+    @apply hover:text-main duration-500 transition-all ease-in-out;
+  }
+
+  button {
+    @apply transition-all duration-500 ease-linear;
+  }
+
+  cite {
+    @apply not-italic font-bold text-xl block;
   }
 }
 
 @layer components {
   .icon {
-    @apply w-7 h-7 flex justify-center items-center;
+    @apply size-7 flex justify-center items-center;
   }
 
   .text-linear-orange {
@@ -37,6 +45,10 @@
 
   .text-linear-green {
     @apply text-transparent bg-clip-text bg-linear-green;
+  }
+
+  .text-linear-green-yellow {
+    @apply text-transparent bg-clip-text bg-linear-Green-Yellow;
   }
 
   .menu-desktop {
@@ -90,6 +102,33 @@
   details[open] p {
     @apply mt-1;
   }
+
+  .swiper-button-next-ct {
+    @apply absolute lg:top-0 lg:right-0 bottom-0 left-1/2 translate-x-[30%] translate-y-[4rem] lg:translate-x-0 lg:translate-y-0 lg:bottom-auto lg:left-auto text-linear-green hover:text-linear-green-yellow;
+  }
+
+  .swiper-button-prev-ct {
+    @apply absolute lg:top-0 lg:right-10 bottom-0 left-1/2 -translate-x-[130%] translate-y-[4rem] lg:translate-x-0 lg:translate-y-0 lg:bottom-auto lg:left-auto text-linear-green hover:text-linear-green-yellow;
+  }
+
+  .swiper-button-next-ct[aria-disabled="true"],
+  .swiper-button-prev-ct[aria-disabled="true"],
+  .swiper-button-next-ct-1[aria-disabled="true"],
+  .swiper-button-prev-ct-1[aria-disabled="true"] {
+    @apply cursor-not-allowed bg-none text-main/20 hover:bg-none;
+  }
+
+  img[alt="Image item"] {
+    @apply w-1/2 xl:w-4/5 2xl:w-full mx-auto;
+  }
+
+  .swiper-button-next-ct-1 {
+    @apply bg-linear-Yellow-Green w-16 h-10 flex items-center justify-center rounded-xl hover:bg-linear-layout font-bold absolute bottom-0 left-1/2 translate-x-2 space-x-2;
+  }
+
+  .swiper-button-prev-ct-1 {
+    @apply bg-linear-Green-Yellow w-16 h-10 flex items-center justify-center rounded-xl hover:bg-linear-layout font-bold absolute bottom-0 right-1/2 -translate-x-2 space-x-2;
+  }
 }
 
 .trapezoid {
@@ -131,10 +170,15 @@
   object-fit: cover;
 }
 
-.swiper-pagination-bullet-active[aria-current="true"] {
+.swiper .swiper-pagination-bullet-active[aria-current="true"] {
   width: 3rem;
   border-radius: 2rem;
   background-color: #0a9949;
+}
+
+.swiper .swiper-pagination-bullet {
+  width: 1rem;
+  border-radius: 1rem;
 }
 
 @media (max-width: 1024px) {
